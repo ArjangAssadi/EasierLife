@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsBrowser", "HackerNewsBrowser\HackerNewsBrowser.csproj", "{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Parts", "Application.Parts\Application.Parts.csproj", "{B7C04657-1900-49E4-83A3-8695F978287C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Parts.Contracts", "Application.Parts.Contracts\Application.Parts.Contracts.csproj", "{2BAFBEF8-DBDA-4E1D-92A6-4A2F6A9D8891}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessLogger", "ProcessLogger\ProcessLogger.csproj", "{FA150F0D-7788-4F86-9A7A-510A6EDD8225}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7C04657-1900-49E4-83A3-8695F978287C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7C04657-1900-49E4-83A3-8695F978287C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7C04657-1900-49E4-83A3-8695F978287C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7C04657-1900-49E4-83A3-8695F978287C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BAFBEF8-DBDA-4E1D-92A6-4A2F6A9D8891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAFBEF8-DBDA-4E1D-92A6-4A2F6A9D8891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAFBEF8-DBDA-4E1D-92A6-4A2F6A9D8891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAFBEF8-DBDA-4E1D-92A6-4A2F6A9D8891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
