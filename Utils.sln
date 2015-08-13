@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsBrowser", "HackerNewsBrowser\HackerNewsBrowser.csproj", "{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}"
 EndProject
@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.Parts.Contracts", "Application.Parts.Contracts\Application.Parts.Contracts.csproj", "{2BAFBEF8-DBDA-4E1D-92A6-4A2F6A9D8891}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessLogger", "ProcessLogger\ProcessLogger.csproj", "{FA150F0D-7788-4F86-9A7A-510A6EDD8225}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveWindowLogger", "ActiveWindowLogger\ActiveWindowLogger.csproj", "{468CDE81-C608-4F83-A66D-7BB5A1F059BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{47C9835C-5D53-4FFF-B081-DFD59F34EB39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA150F0D-7788-4F86-9A7A-510A6EDD8225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{468CDE81-C608-4F83-A66D-7BB5A1F059BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468CDE81-C608-4F83-A66D-7BB5A1F059BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468CDE81-C608-4F83-A66D-7BB5A1F059BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468CDE81-C608-4F83-A66D-7BB5A1F059BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C9835C-5D53-4FFF-B081-DFD59F34EB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C9835C-5D53-4FFF-B081-DFD59F34EB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C9835C-5D53-4FFF-B081-DFD59F34EB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C9835C-5D53-4FFF-B081-DFD59F34EB39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
