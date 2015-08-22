@@ -1,8 +1,9 @@
 ﻿using System;
+using EventsAggregator.DataContracts;
 
-namespace EventsAggregator.Entities.BO.Events
+namespace EventsAggregator.DataObjects
 {
-    public class Event : IEvent
+    public class CanberraEvent : IEvent
     {
         public DateTime DateTime { get; set; }
         public string Heading { get; set; }

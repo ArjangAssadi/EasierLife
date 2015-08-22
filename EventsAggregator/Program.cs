@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using EventsAggregator.Builders;
-using EventsAggregator.Entities.BO;
-using EventsAggregator.Parts.Extractors;
-using EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces;
-using EventsAggregator.Providers;
+﻿using System.Collections.Generic;
+using EventsAggregator.CodeContracts;
+using EventsAggregator.CodeObjects.Engines;
+using EventsAggregator.DataContracts;
+using EventsAggregator.Providers.ConversionLogics;
 using EventsAggregator.Providers.WebPage;
 
 namespace EventsAggregator
@@ -13,30 +11,19 @@ namespace EventsAggregator
     {
         static void Main(string[] args)
         {
+            //Get The all web pages
             WebPageProvider webPageProvider = new WebPageProvider();
             IEnumerable<IWebPage> webPages = webPageProvider.All();
 
-            Builders.WebPageToTextTableExtractorBuilder wb = new WebPageToTextTableExtractorBuilder();
+            //Get all the logic for web pages
+            ConversionLogicsProvider clp = new ConversionLogicsProvider();
+            IEnumerable<IConversionLogicsForWebPage> conversionLogicsForWebPages = clp.All();
 
+            Engine01 engine = new Engine01();
+            engine.WebPages = webPages;
+            engine.WebConversionRules = conversionLogicsForWebPages;
 
-            IList<IWebPageToTextTableExtractor> extractorList = new List<IWebPageToTextTableExtractor>();
-
-            foreach (var webPage in webPages)
-            {
-                extractorList.Add(wb.Build(webPage));
-            }
-
-
-            foreach (IWebPageToTextTableExtractor extractor in extractorList)
-            {
-                extractor.ProcessingDataContainer.TextTable
-            }
-
-            EventsExtractorEvents ce = new EventsExtractorEvents();
-            ce.TextTableToEventsConvertor = plugin;
-            
-            ce.ExtractEvents();
-            
+            engine.Run();
         }
     }
 }

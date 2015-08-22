@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
-using EventsAggregator.Entities.BO;
-using EventsAggregator.Infrastructure;
+using EventsAggregator.DataContracts;
+using EventsAggregator.DataObjects;
 using EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces;
 using HtmlAgilityPack;
 
@@ -20,7 +20,5 @@ namespace EventsAggregator.Parts.WebPageToTextTableExtractor.PageSpecificProcess
             var getHtmlWeb = new HtmlWeb();
             return getHtmlWeb.Load(webPage.Uri.OriginalString);
         }
-
-        
     }
 }

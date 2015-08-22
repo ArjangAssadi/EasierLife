@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventsAggregator.Entities.BO
+namespace EventsAggregator.DataContracts
 {
     public interface IEvent
     {

@@ -47,37 +47,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Builders\WebPageBuilder.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\Interfaces\IDataCahngedNotifiable.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\PageSpecificProcessingLogic\CanberraEventsPageProcessingLogic.cs" />
-    <Compile Include="Builders\WebPageToTextTableExtractor.cs" />
-    <Compile Include="Entities\BO\Events\Event.cs" />
-    <Compile Include="Infrastructure\TextTable.cs" />
-    <Compile Include="Parts\ExtractorPlugins\ExtractorPlugin.cs" />
-    <Compile Include="Parts\TextTableToEventsConvertors\ITextTableToEvents.cs" />
-    <Compile Include="Parts\ExtractorPlugins\IEventExtractorPlugin.cs" />
-    <Compile Include="Parts\Extractors\EventsExtractor.cs" />
-    <Compile Include="Entities\BO\IEvent.cs" />
-    <Compile Include="Infrastructure\TextRow.cs" />
-    <Compile Include="Entities\BO\WebPage.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\ProcessDataContainer.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\WebPageToTextTableExtractor.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\Interfaces\IProcessDataContainer.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\Interfaces\IWebPageToTextTableExtractor.cs" />
-    <Compile Include="Parts\WebPageToTextTableExtractor\Interfaces\IProcessingLogicContainer.cs" />
+    <Compile Include="CodeContracts\IConversionLogicsForWebPage.cs" />
+    <Compile Include="CodeObjects\ConversionLogic\GenericConversionLogicsForAllWebPage.cs" />
+    <Compile Include="CodeObjects\Engines\Engine.cs" />
+    <Compile Include="Providers\ConversionLogics\ConversionLogicsProvider.cs" />
+    <Compile Include="DataContracts\IWebPage.cs" />
+    <Compile Include="DataObjects\WebPage\CanberraEvents.cs" />
+    <Compile Include="DataObjects\Event\Event.cs" />
+    <Compile Include="StructuralObjects\TextTable.cs" />
+    <Compile Include="DataContracts\IEvent.cs" />
+    <Compile Include="StructuralObjects\TextRow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Builders\WebPage\CanberraEventsPageConversionLogic.cs" />
+    <Compile Include="CodeObjects\ConversionLogic\ConversionLogicsForCanberraEventsWebPage.cs" />
     <Compile Include="Providers\WebPage\WebPageProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Parts\ExtractorPlugins\EventExtractorPlugins\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

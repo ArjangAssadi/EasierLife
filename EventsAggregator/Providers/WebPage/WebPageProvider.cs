@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using EventsAggregator.Builders;
-using EventsAggregator.Entities.BO;
+﻿using System.Collections.Generic;
+using EventsAggregator.DataContracts;
+using EventsAggregator.DataObjects.WebPage;
 
 namespace EventsAggregator.Providers.WebPage
 {
@@ -11,9 +10,7 @@ namespace EventsAggregator.Providers.WebPage
         {
             IList<IWebPage> result = new List<IWebPage>();
 
-            WebPageBuilder wpb = new WebPageBuilder();
-            
-            result.Add(wpb.Build(1));
+            result.Add(new CanberraEvents());
 
             return result;
         }

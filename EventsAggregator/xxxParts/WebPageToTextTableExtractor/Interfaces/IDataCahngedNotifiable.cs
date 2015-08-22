@@ -1,5 +1,6 @@
-using EventsAggregator.Entities.BO;
-using EventsAggregator.Infrastructure;
+using EventsAggregator.DataContracts;
+using EventsAggregator.DataObjects;
+using EventsAggregator.StructuralObjects;
 using HtmlAgilityPack;
 
 namespace EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces

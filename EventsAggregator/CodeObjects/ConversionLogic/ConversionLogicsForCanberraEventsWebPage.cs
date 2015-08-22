@@ -1,12 +1,17 @@
 using System.Collections.Generic;
-using EventsAggregator.Entities.BO;
-using EventsAggregator.Infrastructure;
+using EventsAggregator.CodeContracts;
+using EventsAggregator.StructuralObjects;
 using HtmlAgilityPack;
 
-namespace EventsAggregator.Builders.WebPage
+namespace EventsAggregator.CodeObjects.ConversionLogic
 {
-    class CanberraEventsPageConversionLogic : IConversionLogic
+    class ConversionLogicsForCanberraEventsWebPage : GenericConversionLogicsForAllWebPage, IConversionLogicsForWebPage
     {
+        public int Id
+        {
+            get { return 1; }
+        }
+
         public TextTable Convert(HtmlDocument document)
         {
             var page = document.GetElementbyId("page");
@@ -38,5 +43,7 @@ namespace EventsAggregator.Builders.WebPage
 
             return textTable;
         }
+
+
     }
 }

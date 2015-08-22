@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using EventsAggregator.Entities.BO;
+﻿using EventsAggregator.DataContracts;
 using EventsAggregator.Parts.WebPageToTextTableExtractor;
 using EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces;
 using EventsAggregator.Parts.WebPageToTextTableExtractor.PageSpecificProcessingLogic;

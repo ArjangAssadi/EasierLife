@@ -1,6 +1,4 @@
 ﻿using System.Collections.Generic;
-using EventsAggregator.Entities.BO;
-using EventsAggregator.Infrastructure;
 using EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces;
 using HtmlAgilityPack;
 

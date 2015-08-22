@@ -1,5 +1,5 @@
-using EventsAggregator.Entities.BO;
-using EventsAggregator.Infrastructure;
+using EventsAggregator.DataContracts;
+using EventsAggregator.DataObjects;
 using HtmlAgilityPack;
 
 namespace EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces
@@ -9,7 +9,7 @@ namespace EventsAggregator.Parts.WebPageToTextTableExtractor.Interfaces
         IProcessDataContainer ProcessDataContainer { get; set; }
         void Start();
         HtmlDocument Convert(IWebPage webPage);
-        TextTable Convert(HtmlDocument document);
+        //TextTable Convert(HtmlDocument document); The logic for this will come from the page!
     }
 
 }

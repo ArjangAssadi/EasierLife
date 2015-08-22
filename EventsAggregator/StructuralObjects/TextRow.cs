@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace EventsAggregator.Infrastructure
+namespace EventsAggregator.StructuralObjects
 {
     public class TextRow
     {

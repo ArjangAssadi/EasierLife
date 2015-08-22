@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace EventsAggregator.Infrastructure
+namespace EventsAggregator.StructuralObjects
 {
     public class TextTable  
     {
