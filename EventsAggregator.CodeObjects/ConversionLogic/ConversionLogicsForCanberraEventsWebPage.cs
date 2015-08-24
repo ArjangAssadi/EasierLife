@@ -5,7 +5,7 @@ using HtmlAgilityPack;
 
 namespace EventsAggregator.CodeObjects.ConversionLogic
 {
-    class ConversionLogicsForCanberraEventsWebPage : GenericConversionLogicsForAllWebPage, IConversionLogicsForWebPage
+    public class ConversionLogicsForCanberraEventsWebPage : GenericConversionLogicsForAllWebPage, IConversionLogicsForWebPage
     {
         public int Id
         {

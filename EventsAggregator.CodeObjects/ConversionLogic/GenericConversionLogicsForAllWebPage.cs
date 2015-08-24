@@ -3,7 +3,7 @@ using HtmlAgilityPack;
 
 namespace EventsAggregator.CodeObjects.ConversionLogic
 {
-    class GenericConversionLogicsForAllWebPage
+    public class GenericConversionLogicsForAllWebPage
     {
         public HtmlDocument Convert(IWebPage webPage)
         {

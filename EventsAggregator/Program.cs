@@ -3,8 +3,8 @@ using EventsAggregator.CodeContracts;
 using EventsAggregator.CodeObjects.Engines;
 using EventsAggregator.DataContracts;
 using EventsAggregator.Providers.ConversionLogics;
-using EventsAggregator.Providers.WebPage;
 
+using EventsAggregator.Providers.WebPage;
 namespace EventsAggregator
 {
     class Program
@@ -18,6 +18,9 @@ namespace EventsAggregator
             //Get all the logic for web pages
             ConversionLogicsProvider clp = new ConversionLogicsProvider();
             IEnumerable<IConversionLogicsForWebPage> conversionLogicsForWebPages = clp.All();
+
+            //Persist what is being passed to Engine01
+
 
             Engine01 engine = new Engine01();
             engine.WebPages = webPages;

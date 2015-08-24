@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD8D759B-B2D3-4389-8224-CB1B70176596}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{58F99567-1EDF-41EC-A36E-44EFBB107F6B}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EventsAggregator</RootNamespace>
-    <AssemblyName>EventsAggregator</AssemblyName>
+    <RootNamespace>EventsAggregator.DataContracts</RootNamespace>
+    <AssemblyName>EventsAggregator.DataContracts</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -33,10 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HtmlAgilityPack, Version=1.4.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>C:\packages\HtmlAgilityPack.1.4.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,30 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="IEvent.cs" />
+    <Compile Include="IWebPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\EventsAggregator.CodeContracts\EventsAggregator.CodeContracts.csproj">
-      <Project>{72035EB5-5829-4C61-9F1A-A68BFB0B09CE}</Project>
-      <Name>EventsAggregator.CodeContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EventsAggregator.CodeObjects\EventsAggregator.CodeObjects.csproj">
-      <Project>{F6966FE7-2158-4797-845B-6C315FD2185B}</Project>
-      <Name>EventsAggregator.CodeObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EventsAggregator.DataContracts\EventsAggregator.DataContracts.csproj">
-      <Project>{58F99567-1EDF-41EC-A36E-44EFBB107F6B}</Project>
-      <Name>EventsAggregator.DataContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\EventsAggregator.Providers\EventsAggregator.Providers.csproj">
-      <Project>{1b3c86dd-d47d-4e64-84b6-1d8789af357a}</Project>
-      <Name>EventsAggregator.Providers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

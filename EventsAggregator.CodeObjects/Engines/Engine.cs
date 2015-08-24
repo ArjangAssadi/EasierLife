@@ -7,7 +7,7 @@ using HtmlAgilityPack;
 
 namespace EventsAggregator.CodeObjects.Engines
 {
-    internal class Engine01
+    public class Engine01
     {
         private List<TextTable> _pageTextData;
 

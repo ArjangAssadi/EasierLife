@@ -3,7 +3,7 @@ using EventsAggregator.DataContracts;
 
 namespace EventsAggregator.DataObjects.WebPage
 {
-    class CanberraEvents : IWebPage
+    public class CanberraEvents : IWebPage
     {
         private int _id;
         private string _description;

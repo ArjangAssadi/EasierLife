@@ -4,7 +4,7 @@ using EventsAggregator.DataObjects.WebPage;
 
 namespace EventsAggregator.Providers.WebPage
 {
-    class WebPageProvider
+    public class WebPageProvider
     {
         public IEnumerable<IWebPage> All()
         {
