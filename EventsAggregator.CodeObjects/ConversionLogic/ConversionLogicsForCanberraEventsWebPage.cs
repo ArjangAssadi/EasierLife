@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using EventsAggregator.CodeContracts;
 using EventsAggregator.StructuralObjects;
 using HtmlAgilityPack;
+using HtmlDocument = HTMLAgilityPackWrapper.HtmlDocument;
+using HtmlNodeCollection = HTMLAgilityPackWrapper.HtmlNodeCollection;
 
 namespace EventsAggregator.CodeObjects.ConversionLogic
 {
@@ -15,10 +17,10 @@ namespace EventsAggregator.CodeObjects.ConversionLogic
         public TextTable Convert(HtmlDocument document)
         {
             var page = document.GetElementbyId("page");
-            var namelessDiv = page.ChildNodes[0];
+            HtmlNode namelessDiv = page.ChildNodes[0];
 
             //the idiots are using one table per event!
-            HtmlNodeCollection tables = namelessDiv.SelectNodes("//table");
+            HtmlNodeCollection tables = namelessDiv.SelectNodes("//table") as HtmlNodeCollection;
 
             TextTable textTable = new TextTable();
 

@@ -59,6 +59,10 @@
       <Project>{63E8AEE8-B6F5-49E8-A5D3-A954E0D3A3FC}</Project>
       <Name>EventsAggregator.StructuralObjects</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HTMLAgilityPackWrapper\HTMLAgilityPackWrapper.csproj">
+      <Project>{e79767e2-2cd6-4de7-8e1a-5de280582f0f}</Project>
+      <Name>HTMLAgilityPackWrapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

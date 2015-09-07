@@ -1,13 +1,13 @@
 using EventsAggregator.DataContracts;
 using EventsAggregator.StructuralObjects;
-using HtmlAgilityPack;
+using HTMLAgilityPackWrapper;
 
 namespace EventsAggregator.CodeContracts
 {
     public interface IConversionLogicsForWebPage
     {
         int Id { get; }
-        HtmlDocument Convert(IWebPage webPage);
-        TextTable Convert(HtmlDocument document);
+        HTMLAgilityPackWrapper.HtmlDocument Convert(IWebPage webPage);
+        TextTable Convert(HTMLAgilityPackWrapper.HtmlDocument document);
     }
 }

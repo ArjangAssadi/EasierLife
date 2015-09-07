@@ -3,7 +3,7 @@ using System.Linq;
 using EventsAggregator.CodeContracts;
 using EventsAggregator.DataContracts;
 using EventsAggregator.StructuralObjects;
-using HtmlAgilityPack;
+using HTMLAgilityPackWrapper;
 
 namespace EventsAggregator.CodeObjects.Engines
 {

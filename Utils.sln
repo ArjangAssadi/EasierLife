@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNewsBrowser", "HackerNewsBrowser\HackerNewsBrowser.csproj", "{CAFC5ACA-0927-4A90-A67B-E701FF9D1704}"
 EndProject
@@ -32,6 +32,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAggregator.DataObjects", "EventsAggregator.DataObjects\EventsAggregator.DataObjects.csproj", "{A4D27BBE-9E39-4C3D-B450-E44B4CFC82E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAggregator.StructuralObjects", "EventsAggregator.StructuralObjects\EventsAggregator.StructuralObjects.csproj", "{63E8AEE8-B6F5-49E8-A5D3-A954E0D3A3FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLAgilityPackWrapper", "HTMLAgilityPackWrapper\HTMLAgilityPackWrapper.csproj", "{E79767E2-2CD6-4DE7-8E1A-5DE280582F0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{63E8AEE8-B6F5-49E8-A5D3-A954E0D3A3FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63E8AEE8-B6F5-49E8-A5D3-A954E0D3A3FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63E8AEE8-B6F5-49E8-A5D3-A954E0D3A3FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E79767E2-2CD6-4DE7-8E1A-5DE280582F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79767E2-2CD6-4DE7-8E1A-5DE280582F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79767E2-2CD6-4DE7-8E1A-5DE280582F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79767E2-2CD6-4DE7-8E1A-5DE280582F0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
